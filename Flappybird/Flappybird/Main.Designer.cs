@@ -38,6 +38,7 @@
             this.PipeTop = new System.Windows.Forms.PictureBox();
             this.Flappybird = new System.Windows.Forms.PictureBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.Author = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Ground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PipeBottom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PipeTop)).BeginInit();
@@ -77,9 +78,9 @@
             // 
             this.Ground.AccessibleName = "Ground";
             this.Ground.Image = global::Flappybird.Properties.Resources.ground;
-            this.Ground.Location = new System.Drawing.Point(-17, 553);
+            this.Ground.Location = new System.Drawing.Point(-17, 543);
             this.Ground.Name = "Ground";
-            this.Ground.Size = new System.Drawing.Size(592, 79);
+            this.Ground.Size = new System.Drawing.Size(592, 89);
             this.Ground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Ground.TabIndex = 0;
             this.Ground.TabStop = false;
@@ -87,9 +88,9 @@
             // PipeBottom
             // 
             this.PipeBottom.Image = global::Flappybird.Properties.Resources.pipe;
-            this.PipeBottom.Location = new System.Drawing.Point(308, 309);
+            this.PipeBottom.Location = new System.Drawing.Point(304, 322);
             this.PipeBottom.Name = "PipeBottom";
-            this.PipeBottom.Size = new System.Drawing.Size(100, 253);
+            this.PipeBottom.Size = new System.Drawing.Size(100, 246);
             this.PipeBottom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PipeBottom.TabIndex = 3;
             this.PipeBottom.TabStop = false;
@@ -115,6 +116,15 @@
             this.Flappybird.TabIndex = 1;
             this.Flappybird.TabStop = false;
             // 
+            // Author
+            // 
+            this.Author.AutoSize = true;
+            this.Author.Location = new System.Drawing.Point(312, 603);
+            this.Author.Name = "Author";
+            this.Author.Size = new System.Drawing.Size(106, 13);
+            this.Author.TabIndex = 6;
+            this.Author.Text = "Created by : H4K4M.";
+            // 
             // Main
             // 
             this.AccessibleName = "Main";
@@ -122,6 +132,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(416, 615);
+            this.Controls.Add(this.Author);
             this.Controls.Add(this.playText);
             this.Controls.Add(this.Ground);
             this.Controls.Add(this.ScoreText);
@@ -156,6 +167,7 @@
         private System.Windows.Forms.Timer GameTime;
         private System.Windows.Forms.Label playText;
         private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.Label Author;
     }
 }
 

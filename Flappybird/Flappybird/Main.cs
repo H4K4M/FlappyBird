@@ -48,7 +48,7 @@ namespace Flappybird
                Flappybird.Bounds.IntersectsWith(PipeBottom.Bounds) ||
                Flappybird.Bounds.IntersectsWith(Ground.Bounds))
             {
-                SoundPlayer Sound = new SoundPlayer(@"D:\Flappybird\Flappybird\Flappybird\SoundEffect\GameOver.wav");
+                SoundPlayer Sound = new SoundPlayer(Properties.Resources.GameOver);
                 Sound.Play();
                 GameOver();
             }
@@ -71,7 +71,7 @@ namespace Flappybird
 
         private void Main_KeyUp(object sender, KeyEventArgs e)
         {
-            SoundPlayer Sound = new SoundPlayer(@"D:\Flappybird\Flappybird\Flappybird\SoundEffect\Fly.wav");
+            SoundPlayer Sound = new SoundPlayer(Properties.Resources.Fly);
             Sound.Play();
             if (e.KeyCode == Keys.Space)
                 gravity = 7;

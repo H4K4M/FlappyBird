@@ -92,5 +92,11 @@
   <ItemGroup>
     <None Include="images\pipedown.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="SoundEffect\Fly.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SoundEffect\GameOver.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

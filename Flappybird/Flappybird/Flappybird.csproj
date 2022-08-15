@@ -54,6 +54,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveCach.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>SaveCach.settings</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +98,10 @@
     <None Include="images\pipedown.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="SaveCach.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>SaveCach.Designer.cs</LastGenOutput>
+    </None>
     <None Include="SoundEffect\Fly.wav" />
   </ItemGroup>
   <ItemGroup>

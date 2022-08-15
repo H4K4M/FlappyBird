@@ -23,6 +23,7 @@ namespace Flappybird
         {
             InitializeComponent();
             GameTime.Enabled = false;
+            HighScoreLabel.Text = "HighScore : " + SaveCach.Default.HighScore;
         }
 
         private void GameTime_Tick(object sender, EventArgs e)
@@ -80,8 +81,13 @@ namespace Flappybird
         private void GameOver()
         {
             GameTime.Stop();
+            if(score > SaveCach.Default.HighScore)
+            {
+                SaveCach.Default.HighScore = score;
+                SaveCach.Default.Save();
+            }
             MessageBoxButtons buttons = MessageBoxButtons.OK;
-            DialogResult result = MessageBox.Show("Game Over!","Game Over", buttons);
+            DialogResult result = MessageBox.Show("     Game Over!\n    Your Score: " + score,"Game Over", buttons);
             if(result == DialogResult.OK)
             {
                 this.Controls.Clear();
@@ -92,6 +98,7 @@ namespace Flappybird
                 extratime = 0;
                 this.InitializeComponent();
                 GameTime.Enabled = false;
+                HighScoreLabel.Text = "HighScore : " + SaveCach.Default.HighScore;
             }
         }
     }

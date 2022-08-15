@@ -39,6 +39,7 @@
             this.Flappybird = new System.Windows.Forms.PictureBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.Author = new System.Windows.Forms.Label();
+            this.HighScoreLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Ground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PipeBottom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PipeTop)).BeginInit();
@@ -125,6 +126,16 @@
             this.Author.TabIndex = 6;
             this.Author.Text = "Created by : H4K4M.";
             // 
+            // HighScoreLabel
+            // 
+            this.HighScoreLabel.AutoSize = true;
+            this.HighScoreLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HighScoreLabel.Location = new System.Drawing.Point(12, 51);
+            this.HighScoreLabel.Name = "HighScoreLabel";
+            this.HighScoreLabel.Size = new System.Drawing.Size(90, 17);
+            this.HighScoreLabel.TabIndex = 7;
+            this.HighScoreLabel.Text = "HighScore : 0";
+            // 
             // Main
             // 
             this.AccessibleName = "Main";
@@ -132,6 +143,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(416, 615);
+            this.Controls.Add(this.HighScoreLabel);
             this.Controls.Add(this.Author);
             this.Controls.Add(this.playText);
             this.Controls.Add(this.Ground);
@@ -168,6 +180,7 @@
         private System.Windows.Forms.Label playText;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.Label Author;
+        private System.Windows.Forms.Label HighScoreLabel;
     }
 }
 

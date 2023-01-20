@@ -17,7 +17,8 @@ You can install the application using the [setup.exe](https://github.com/H4K4M/F
 ## UI Screenshots
 
 ### First Page
-First page after opening the game
+First page after opening the game.<br />
+
 ![Screenshot](Screenshots/FirstPage.png)
 
 ### Game Play
